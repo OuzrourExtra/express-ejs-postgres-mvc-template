@@ -1,0 +1,49 @@
+{
+  "name": "$_project_name_$",
+  "version": "1.0.0",
+  "description": "$_description_$",
+  "main": "app.js",
+  "author": "ilyas ouzrour",
+  "license": "ISC",
+  "scripts": {
+    "build-css": "postcss public/css/input.css -o public/css/output.css",
+    "test": "jest",
+    "tailwind": "tailwind -i public/css/input.css -o public/css/output.css -w",
+    "start": "nodemon app.js",
+    "lint": "eslint '**/*.{js,ts,jsx,tsx}' --quiet",
+    "lint:fix": "eslint '**/*.{js,ts,jsx,tsx}' --fix"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "csurf": "^1.11.0",
+    "daisyui": "^4.12.14",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.8.3",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "portfinder": "^1.0.32",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.12.2"
+  }
+}
